@@ -16,7 +16,7 @@ public class Apple extends Actor
     {
         // Apple falls downwards
         int x = getX();
-        int y = getY();
+        int y = getY() + 2;
         setLocation(x, y);
         
         // Remove apple and draw game over when apple gets to bottom
