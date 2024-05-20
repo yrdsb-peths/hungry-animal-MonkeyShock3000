@@ -11,7 +11,7 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreLabel;
     int level = 1;
-    
+    GreenfootSound elephantCry = new GreenfootSound("elephantCry.mp3");
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -39,6 +39,8 @@ public class MyWorld extends World
     {
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
+        
+        elephantCry.play();
     }
     
     /**
